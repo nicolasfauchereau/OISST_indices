@@ -127,6 +127,7 @@ anoms = dset.groupby(dset.time.dt.dayofyear) - clim["average"]
 anoms = anoms.interp_calendar(standard_calendar)
 
 # %% 
+print(anoms)
 anoms_ts = anoms['sst'].to_pandas().T
 
 # %% export to CSV 
