@@ -139,7 +139,6 @@ csv_path.mkdir(parents=True, exist_ok=True)
 anoms_ts.to_csv(csv_path.joinpath(f"{domain}_time-series_{ndays_agg}_days_anomalies_to_{last_day:%Y-%m-%d}.csv"))
 
 # %% print the last 10 days
-print(anoms_ts.tail(10))
 
 # %% plot the time-series
 f, axes = plt.subplots(
